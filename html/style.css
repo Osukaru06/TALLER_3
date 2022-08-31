@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: black;
+    font-family: sans-serif;
+    
+	
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}
+
+.menu1 {
+    display: flex;
+    margin-right: 10px;
+}
+
+    
+
+.titulo1 {
+    margin-left: 20px;
+}
+
+.titulo1 a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    
+    
+}
+
+.menu1 a {
+    display: block;
+    padding: 23px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.menu1 a:hover {
+    background: gray;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.container {
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider{
+    background-color: white;
+    padding: 40px 0;
+
+}
+
+.slider__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+
+.slider__body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+
+
+}
+
+.slider__body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider__texts{
+    max-width: 600px;
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.slider__review{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+}
+.slideR__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider__arrow {
+    cursor: pointer;
+    width: 90%;
+}
+.slider__arrow:nth-last-of-type(2){
+    justify-self: end;
+}
+
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+
+/*--Pelicula de la semana--*/
+.pelicula-semana {
+	font-size: 20px;
+	min-height: 40.62em;
+	color: white;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(img/koe.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal {
+    font-size: 14px;
+}
+
+.pelicula-principal .descripcion {
+    max-width: 100%;
+}
+
+
+/*--Peliculas recomendadas--*/
+
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+
